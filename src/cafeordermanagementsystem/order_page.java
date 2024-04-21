@@ -436,7 +436,7 @@ public class order_page extends javax.swing.JFrame {
     
             // Informing the user about successful bill generation
             System.out.println("Bill generated successfully. New order placed.");
-            JOptionPane.showMessageDialog(rootPane, "User doesn't exist!!");
+            JOptionPane.showMessageDialog(rootPane, "Order Placed Successfully!!");
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Error generating bill: " + e.getMessage());
