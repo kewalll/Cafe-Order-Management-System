@@ -19,6 +19,7 @@ import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 public class order_page extends javax.swing.JFrame {
     public int grandTotal=0;
@@ -435,6 +436,7 @@ public class order_page extends javax.swing.JFrame {
     
             // Informing the user about successful bill generation
             System.out.println("Bill generated successfully. New order placed.");
+            JOptionPane.showMessageDialog(rootPane, "User doesn't exist!!");
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Error generating bill: " + e.getMessage());
